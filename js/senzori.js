@@ -31,8 +31,8 @@ function on_device_motion(e)
 	var beta=Math.atan(e.accelerationIncludingGravity.y / e.accelerationIncludingGravity.z)*180/Math.PI;
     var gamma=-Math.atan(e.accelerationIncludingGravity.x / e.accelerationIncludingGravity.z)*180/Math.PI;
 
-			document.getElementById("id_rot_x").innerHTML="beta="+Math.round(e.beta*100)/100;
-			document.getElementById("id_rot_y").innerHTML="gamma="+Math.round(e.gamma*100)/100;
+			document.getElementById("id_rot_x").innerHTML="beta="+Math.round(beta*100)/100;
+			document.getElementById("id_rot_y").innerHTML="gamma="+Math.round(gamma*100)/100;
 
 }
 //------------------
