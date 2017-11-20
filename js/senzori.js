@@ -1,6 +1,6 @@
 
 
-document.getElementById("id_business_version").innerHTML="Business Version"
+document.getElementById("id_business_version").innerHTML="Business Version";
 
 window.addEventListener("deviceorientation",on_device_orientation);
 window.addEventListener("devicemotion",on_device_motion);
