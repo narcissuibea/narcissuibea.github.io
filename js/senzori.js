@@ -1,6 +1,7 @@
 
 
-document.getElementById("id_bussines_version").innerHTML="Bussines Version"
+document.getElementById("id_business_version").innerHTML="Business Version"
+
 window.addEventListener("deviceorientation",on_device_orientation);
 window.addEventListener("devicemotion",on_device_motion);
 
@@ -26,6 +27,8 @@ function on_device_motion(e)
 		document.getElementById("id_acc_g_y").innerHTML="acc_g_y"+Math(e.accelerationIncludingGravity.y*100)/100;
 			document.getElementById("id_acc_g_z").innerHTML="acc_g_z"+Math(e.accelerationIncludingGravity.z*100)/100;
 
+			
+			
 
 	
 }
