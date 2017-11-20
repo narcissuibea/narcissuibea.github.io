@@ -23,9 +23,9 @@ function on_device_motion(e)
 		document.getElementById("id_acc_y").innerHTML="acc_y="+Math.round(e.acceleration.y*100)/100;
 			document.getElementById("id_acc_z").innerHTML="acc_z="+Math.round(e.acceleration.z*100)/100;
  
- document.getElementById("id_acc_g_x").innerHTML="acc_g_x"+Math.round(e.accelerationIncludingGravity.x*100)/100;
-		document.getElementById("id_acc_g_y").innerHTML="acc_g_y"+Math.round(e.accelerationIncludingGravity.y*100)/100;
-			document.getElementById("id_acc_g_z").innerHTML="acc_g_z"+Math.round(e.accelerationIncludingGravity.z*100)/100;
+ document.getElementById("id_acc_g_x").innerHTML="acc_g_x="+Math.round(e.accelerationIncludingGravity.x*100)/100;
+		document.getElementById("id_acc_g_y").innerHTML="acc_g_y="+Math.round(e.accelerationIncludingGravity.y*100)/100;
+			document.getElementById("id_acc_g_z").innerHTML="acc_g_z="+Math.round(e.accelerationIncludingGravity.z*100)/100;
 
 			
 			
