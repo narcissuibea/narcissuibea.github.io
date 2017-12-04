@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2017.11.28.2";
+document.getElementById("id_business_version").innerHTML = "Business version = 2017.11.28.3";
 
 //window.addEventListener("deviceorientation", on_device_orientation);
 window.addEventListener("devicemotion", on_device_motion);
@@ -14,7 +14,7 @@ setInterval(deseneaza_cerc,40,gamma,beta);
 
 
 //-----------------------------------------------------
-function deseneaza_cerc(unghi1, unghi2)
+function deseneaza_cerc() //unghi1, unghi2
 {
 		ctx.clearRect(0, 0, 400, 400);
 		
