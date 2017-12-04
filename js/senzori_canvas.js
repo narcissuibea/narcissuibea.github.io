@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2017.11.28.3";
+document.getElementById("id_business_version").innerHTML = "Business version = 2017.11.28.4";
 
 //window.addEventListener("deviceorientation", on_device_orientation);
 window.addEventListener("devicemotion", on_device_motion);
@@ -10,7 +10,7 @@ var gamma=0;
 var beta=0;
 
 
-setInterval(deseneaza_cerc,40,gamma,beta);
+setInterval(deseneaza_cerc,40);//,gamma,beta);
 
 
 //-----------------------------------------------------
