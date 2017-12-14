@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2017.12.14.2";
+document.getElementById("id_business_version").innerHTML = "Business version = 2017.12.14.4";
 
 var canvas =document.getElementById("id_canvas");
 var context =canvas.getContext("2d");
@@ -38,5 +38,5 @@ function on_move_touch(e)
 		context.strokeStyle=lista_culori[i];
 		context.stroke();
 
-
+	}
 
