@@ -9,7 +9,7 @@ var synt= window.speechSynthesis;
 //_____________________________%%%%%_________________
 function on_get_voices()
 {
-	var voci= synth.getVoices();
+	var voci= synt.getVoices();
 
 	for(i=0;i<voci.length;i++)
 	{
