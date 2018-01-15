@@ -13,7 +13,7 @@ function on_get_voices()
 
 	for(i=0;i<voci.length;i++)
 	{
-		document.getElementById("id_voices").innerHTML += voci[i] + " " + voci[i].name +"<br>";
+		document.getElementById("id_voices").innerHTML += voci[i].lang + " " + voci[i].name +"<br>";
 	}
 }
 
@@ -25,10 +25,10 @@ function speak()
 	
 	var enunt=new SpeechSynthesisUtterance();
 	
-	enunt.lang="en-US";
-	enunt.text=document.getElementById("id_text").value;
+	enunt.lang= "en-US";
+	enunt.text= document.getElementById("id_text").value;
 	
-	synt.speak(enunt);
+	synth.speak(enunt);
 }
 
 
