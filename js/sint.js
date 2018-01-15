@@ -27,11 +27,21 @@ function speak()
 	
 	enunt.lang= "en-US";
 	enunt.text= document.getElementById("id_text").value;
-	
+	enunt.onend= on_end_synt;
+	document.getElementById("id_speak_button").disable=true;
 	synt.speak(enunt);
 }
 
 
 //--------------------------------
+
+  function on_end_synt()
+  {
+	  	document.getElementById("id_speak_button").disable=false;
+
+  }
+
+//----------------------------------------
+
 	
 	
