@@ -4,7 +4,7 @@ document.getElementById("id_business_version").innerHTML = "Business version = "
 
 document.addEventListener("touchstart",speak);
 
-var synth= window.speechSynthesis;
+var synt= window.speechSynthesis;
 
 //_____________________________%%%%%_________________
 function on_get_voices()
@@ -28,7 +28,7 @@ function speak()
 	enunt.lang= "en-US";
 	enunt.text= document.getElementById("id_text").value;
 	
-	synth.speak(enunt);
+	synt.speak(enunt);
 }
 
 
