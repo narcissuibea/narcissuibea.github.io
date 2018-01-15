@@ -23,6 +23,6 @@ function on_speech_end(e)
 //--------------------------------------
 function on_speech_results(e)
 {
-	document.getElementById ("id_speech").innerHtml=e.results.item(0).item(0).transcript;
+	document.getElementById ("id_speech").innerHTML=e.results.item(0).item(0).transcript;
 	
 }
