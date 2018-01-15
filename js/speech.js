@@ -5,7 +5,7 @@ document.getElementById("id_business_version").innerHTML = "Business version = "
 //------------------------------------
 
 var speech=new webkitSpeechRecognition();
-speech.onresults= on_speech_results;
+speech.onresult= on_speech_results;
 speech.onspeechend=on_speech_end;
 speech.lang="en-US";
 //-----------------------------------
