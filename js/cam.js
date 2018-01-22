@@ -3,12 +3,14 @@ var d = new Date();
 document.getElementById("id_business_version").innerHTML = "Business version = " + d.getFullYear() + "." + (d.getMonth()+1) + "." + d.getDate() + ".0"; 
 
 //------------------------------------
-var constraints={audio: true, video: {facingMode:"environment"}};
+var constraints={audio: true, video: { facingMode:"environment"}};
 
 navigator.mediaDevices.getUserMedia(constraints).then(on_cam).catch(on_error);
 
 
 var video= document.getElementById("id_video");
+video.addEventListener("touchstart", on_touch_video);
+
 
 //------------------------------------
 
@@ -30,3 +32,10 @@ function on_error(e)
 }
 
 //-------------------------------------
+function on_touch_video(e)
+{
+	var canvas= document.getElementById("id_img");
+	var ctx= canvas.getContext("2d");
+	ctx.drawImage(video, 0, 0);
+}
+//---------------------------------------
