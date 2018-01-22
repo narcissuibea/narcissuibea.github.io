@@ -5,7 +5,7 @@ document.getElementById("id_business_version").innerHTML = "Business version = "
 //------------------------------------
 var constraints={audio: true, video: true};
 
-navigator.MediaDevices.getUserMedia(constraints).then(on_cam).catch(on_error);
+navigator.mediaDevices.getUserMedia(constraints).then(on_cam).catch(on_error);
 
 
 var video= document.getElementById("id_video");
