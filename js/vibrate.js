@@ -26,8 +26,9 @@ function on_touch_start()
 }
 //-----------------------------------------------------
 
-function on_touch_end()
+function on_touch_end(e)
 {
+	e.preventDefault();
 	clearInterval(timer_id);
 }
 
