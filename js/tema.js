@@ -12,7 +12,7 @@ function on_touch_start(e)
 
 {
 	e.preventDefault();
-	timer_id= setInterval (start_vibrate, 150);
+	timer_id= setInterval (start_vibrate, 1050);
 	
 }
 
@@ -20,7 +20,7 @@ function on_touch_start(e)
 	
 	function start_vibrate()
 	{
-    window.navigator.vibrate(200); 
+    window.navigator.vibrate(20); 
 
 }
 //-----------------------------------------------------
