@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2017.11.28.9";
+document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.29.9";
 
 //window.addEventListener("deviceorientation", on_device_orientation);
 window.addEventListener("devicemotion", on_device_motion);
@@ -19,12 +19,12 @@ function deseneaza_cerc(u)
 		
 		//ctx.rect(0, 0, 400, 400);
 		//ctx.stroke();
-		ctx.strokeRect(0,0,400,400);
+		ctx.strokeRect(0,0,600,600);
 		
 		
 		ctx.beginPath();
 		ctx.arc(200 + u.gamma * 500 / 90, 200 + u.beta * 200 / 90, 20, 0, 2 * Math.PI);
-		ctx.fillStyle = "#FF0000";
+		ctx.fillStyle = "##FFFF00";
 		//ctx.fill();
 		ctx.strokeStyle = "#00FF00";
 		ctx.lineWidth = 5;
