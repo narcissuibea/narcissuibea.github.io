@@ -1,8 +1,6 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.28.10";
+var d = new Date();
 
-//window.addEventListener("deviceorientation", on_device_orientation);
-window.addEventListener("devicemotion", on_device_motion);
-
+document.getElementById("id_business_version").innerHTML = "Business version = " + d.getFullYear() + "." + (d.getMonth()+1) + "." + d.getDate() + ".4"; 
 
 
 
