@@ -1,11 +1,11 @@
 var d = new Date();
 
-document.getElementById("id_business_version").innerHTML = "Business version = " + d.getFullYear() + "." + (d.getMonth()+1) + "." + d.getDate() + ".13";
+document.getElementById("id_business_version").innerHTML = "Business version = " + d.getFullYear() + "." + (d.getMonth()+1) + "." + d.getDate() + ".14";
 
 
  var x = document.getElementById("myBtn");
   var x = document.getElementById("button");
-
+   var x = document.getElementById("demo");
  
 x.addEventListener("mouseover", myFunction);
 x.addEventListener("click", mySecondFunction);
